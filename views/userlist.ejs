@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User List</title>
+    <link rel="stylesheet" type="text/css" href="userdata.css">
+  </head>
+  <body>
+    <ul>
+      <%
+        var list = '';
+        for (i = 0; i < userlist.length; i++) {
+          list += '<li>' + "       TURBIDITY      "+userlist[i].Turbidity + "       pH      " +  userlist[i].pH +"       Temp     "+userlist[i].Temp +'</li>';
+        }
+      %>
+      <%- list %>
+    </ul>
+  </body>
+</html>
